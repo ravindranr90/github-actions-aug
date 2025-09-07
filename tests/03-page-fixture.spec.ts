@@ -7,7 +7,10 @@ test(`Test to launch Browser using page fixture`, async({page}) => {
 
     const url = page.url();
 
-    console.log(`The url of the page is ${url}`);   
+    console.log(`The url of the page is ${url}`);  
+    
+    console.log(`The title of the page is ${await page.title()}`);
+    
 
 })
 
